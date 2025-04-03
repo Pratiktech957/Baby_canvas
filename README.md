@@ -1,6 +1,5 @@
-Here’s your **final README** file with **License and Contributing** sections inside the same code block.  
 
----
+
 
 ```md
 # 🎨 Baby Canvas - Fun Drawing App for Kids  
@@ -39,7 +38,6 @@ Now with **animated UI enhancements**, making it more visually appealing and eng
 1. Clone the repository:  
    ```bash
    git clone https://github.com/your-username/baby-canvas.git
-   ```
 2. Open the `index.html` file in your browser.  
 3. Start drawing! 🎨  
 
@@ -54,12 +52,11 @@ Want to make it even better? 🎉
 
 Fork the repo and create a pull request! 🚀  
 
----
 
 💡 **Developed with love for little artists!**  
 ```
 
----
+
 
 ### 🔥 Key Updates:
 ✔ **License & Contributing** merged into one section.  
