@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Drawing UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <!-- 🔹 Layers System -->
+        <h3>Layers</h3>
+        <button id="addLayer">➕ Add Layer</button>
+        <ul id="layerList"></ul> <!-- Layers List -->
+        
+        <!-- 🔹 Shape Selection -->
+        <h3>Shapes</h3>
+        <!-- <label><input type="checkbox" id="rect"> Rectangle</label> -->
+        <label><input type="checkbox" id="circle"> Circle</label>
+        <label><input type="checkbox" id="triangle"> Triangle</label>
+        <label><input type="checkbox" id="fillColor"> Fill color</label>
+
+        <!-- 🔹 Tools -->
+        <h3>Tools</h3>
+        <label><input type="radio" name="tool" id="brush"> Brush</label>
+        <label><input type="radio" name="tool" id="eraser"> Eraser</label>
+        <label><input type="radio" name="tool" id="selectMode"> Select Mode</label> <!-- Select & Move Mode -->
+
+        <!-- 🔹 Brush Size Slider -->
+        <h3>Brush Size</h3>
+        <div class="slider-container">
+            <input type="range" min="1" max="20" value="5" class="slider">
+        </div>
+
+        <!-- 🔹 Color Palette -->
+        <h3>Colors</h3>
+        <div class="colors">
+            <div class="color-btn black"></div>
+            <div class="color-btn red"></div>
+            <div class="color-btn green"></div>
+            <div class="color-btn blue"></div>
+            <input type="color" id="customColor"> <!-- Custom Color Picker -->
+        </div>
+
+        <!-- 🔹 Actions -->
+        <div class="button-container">
+            <button id="clearCanvas">🧹 Clear Canvas</button>
+            <button id="saveImage">💾 Save As Image</button>
+            <button id="undo">↩ Undo</button>
+            <button id="redo">↪ Redo</button>
+        </div>
+    </div>
+
+    <!-- 🔹 Canvas Area -->
+    <div class="canvas-container">
+        <canvas></canvas>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

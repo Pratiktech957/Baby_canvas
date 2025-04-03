@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background: #8ac6f7;
+    overflow: hidden;
+}
+
+/* ========== Sidebar ========== */
+.sidebar {
+    width: 280px;
+    background: #F8F9FA;
+    padding: 15px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+/* Sidebar Headers */
+.sidebar h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+/* Sidebar Labels */
+.sidebar label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+/* Inputs */
+.sidebar input[type="checkbox"],
+.sidebar input[type="radio"] {
+    margin-right: 8px;
+    transform: scale(1.1);
+}
+
+/* ========== Layers Section ========== */
+#layerList {
+    list-style: none;
+    margin-top: 8px;
+    max-height: 140px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 5px;
+    background: white;
+    border-radius: 5px;
+}
+
+#layerList li {
+    padding: 6px;
+    font-size: 14px;
+    background: #eee;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#layerList li button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #ff4444;
+}
+
+/* ========== Brush Size Slider ========== */
+.slider-container {
+    margin-top: 8px;
+}
+
+.slider {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 6px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+/* ========== Color Selector ========== */
+.colors {
+    display: flex;
+    gap: 10px;
+    margin: 8px 0;
+    flex-wrap: wrap;
+}
+
+.color-btn {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #222;
+}
+
+.black { background: black; }
+.red { background: red; }
+.green { background: green; }
+.blue { background: blue; }
+
+#customColor {
+    width: 40px;
+    height: 24px;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+/* ========== Buttons ========== */
+.button-container {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+button {
+    padding: 8px;
+    border: none;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Special Buttons */
+#undo, #redo {
+    background: #28a745;
+}
+
+#undo:hover, #redo:hover {
+    background: #218838;
+}
+
+#clearCanvas {
+    background: #dc3545;
+}
+
+#clearCanvas:hover {
+    background: #c82333;
+}
+
+/* ========== Canvas Section ========== */
+.canvas-container {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+canvas {
+    background: white;
+    width: 95%;
+    height: 95%;
+    border: 2px solid #bbb;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* ========== Responsive Design ========== */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        overflow-y: hidden;
+    }
+
+    .canvas-container {
+        width: 100%;
+        height: 70vh;
+    }
+
+    canvas {
+        width: 98%;
+        height: 95%;
+    }
+}
