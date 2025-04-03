@@ -38,7 +38,7 @@ This version features an **animated UI** to enhance engagement, making it visual
 ---
 
 ## 📸 Preview  
-![Baby Canvas Preview](preview-image.png)  
+![Baby Canvas Preview](https://1drv.ms/i/c/034d2791f74f8913/EYDMvqbieHNCkBBZcb5Vvg4Bf4IhqNpBL0g6VbJt9fx0zg?e=rr9cru)  
 
 ---
 
