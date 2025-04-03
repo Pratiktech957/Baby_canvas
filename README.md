@@ -32,7 +32,8 @@ Now with **animated UI enhancements**, making it more visually appealing and eng
 - **JavaScript (Canvas API)** - Enables drawing, erasing, and downloading artwork.  
 
 ## 📸 Preview  
-![Baby Canvas Preview](preview-image.png)  
+![Baby Canvas Preview](preview-image.png)
+---
 
 ## 📂 Installation & Usage  
 1. Clone the repository:  
@@ -42,7 +43,8 @@ Now with **animated UI enhancements**, making it more visually appealing and eng
 3. Start drawing! 🎨  
 
 ## 📜 License & Contributing  
-This project is licensed under the **MIT License**.  
+This project is licensed under the **MIT License**.
+---
 
 Want to make it even better? 🎉  
 - Improve animations  
@@ -57,10 +59,3 @@ Fork the repo and create a pull request! 🚀
 ```
 
 
-
-### 🔥 Key Updates:
-✔ **License & Contributing** merged into one section.  
-✔ **Simplified and compact** structure.  
-✔ **Clean and professional** formatting.  
-
-Let me know if you need any changes! 🚀
